@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 /// @author : mrWojackETH
 pragma solidity ^0.8.19;
-import "forge-std/console.sol";
+
 
 contract RSA {
     /// @notice generate public and private key
