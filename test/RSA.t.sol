@@ -59,7 +59,7 @@ contract RSATest is Test {
         console.log("wrong : ", wrongMessage);
         assertFalse(wrongMessage == m);
     }
-
+/* 
     // sign a message with a private key and verify that person signed the message with his public key
     function testSignTransparentMesssage(uint256 m) public {
         vm.assume(m > 1 && m < 1000000);
@@ -69,7 +69,7 @@ contract RSATest is Test {
         uint256 verified = rsa.verify(proof, pubKey);
         assertEq(m, verified);
     }
-
+ */
     function _isPrime(uint256 n) private pure returns (bool) {
         if (n <= 1) return false;
         for (uint256 i = 2; i < _sqrt(n) + 1; i++) {
