@@ -69,17 +69,10 @@ contract RSA {
         mProof = abi.encode(rawMProof);
     }
 
-    /*  function sign(
-        bytes memory c,
-        bytes memory prKey
-    ) external pure returns (bytes memory cProof) {
-        uint256 rawC = abi.decode(c, (uint));
-        (uint256 d, uint256 n) = abi.decode(prKey, (uint256, uint256));
-        uint256 rawCProof = _binExp(m, d, n);
-        cProof = abi.encode(rawCProof);
-    } */
 
-    function verify(
+
+
+function verify(
         bytes memory proof,
         bytes memory pubKey
     ) external pure returns (uint256 m) {
